@@ -2,8 +2,6 @@ const { createHash } = require("crypto");
 
 //creat a string hash
 function hash(input) {
-  //returns  a hash value called `digest` which returns  a
-  //256-bit
   //digest == output
   //SHA stands for secure hash algorithm
   return createHash("sha256").update(input).digest("hex");
